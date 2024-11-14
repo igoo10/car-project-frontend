@@ -1,0 +1,219 @@
+/* CarBrands.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .navbar-brand img {
+    width: 150px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex; /* Use flexbox for the navbar */
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .navbar-collapse {
+    display: flex; /* Use flexbox for alignment */
+    margin-left: auto; /* Push this element to the far right */
+  }
+  
+  .navbar-nav {
+    display: flex; /* Display nav items in a row */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .nav-item {
+    margin-left: 20px; /* Space between nav items */
+  }
+  
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/carbg3.jpg') no-repeat center center/cover; /* Add background image */
+    color: #fff; /* Text color for contrast */
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .hero-content {
+    flex: 1; /* Allow content to take available space */
+    padding: 20px; /* Add padding */
+  }
+  
+  .hero-title {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for title */
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for subtitles */
+    font-size: 1.5rem; /* Subtitle size */
+    font-weight: 600; /* Bold subtitle */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  .hero-description {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for description */
+    font-size: 1rem; /* Description size */
+    margin-bottom: 15px; /* Margin for spacing */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+  
+  
+  .hero-image {
+    flex: 1; /* Allow the image to take available space */
+    display: flex; /* Use flex to center image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Add responsive styles if necessary */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column; /* Stack items on small screens */
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .hero-content {
+      padding-right: 0; /* Remove right padding */
+    }
+  
+    .hero-image {
+      margin-top: 20px; /* Add spacing between text and image */
+    }
+  }
+  
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .logo-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .logo-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .logo-item {
+    flex: 1 1 150px; /* Adjusts the size of the logos */
+    max-width: 150px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .navbar-collapse.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
+  #logo-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers logos horizontally */
+    padding: 20px; /* Adds padding around the container */
+  }
+  
+  .logo-item {
+    margin: 10px; /* Space between logos */
+  }
+  

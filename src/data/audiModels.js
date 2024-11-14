@@ -1,0 +1,22 @@
+export const audiModels = [
+    { id: 1, name: "Audi A3", price: 35000, image: "https://your-image-source/audi-a3.jpg", description: "Compact luxury sedan with a sporty edge." },
+    { id: 2, name: "Audi A4", price: 45000, image: "https://your-image-source/audi-a4.jpg", description: "Elegant mid-size sedan with advanced technology." },
+    { id: 3, name: "Audi Q5", price: 52000, image: "https://your-image-source/audi-q5.jpg", description: "Luxury SUV with smooth handling and versatile features." },
+    { id: 4, name: "Audi Q7", price: 65000, image: "https://your-image-source/audi-q7.jpg", description: "Three-row luxury SUV with ample space and tech." },
+    { id: 5, name: "Audi A6", price: 60000, image: "https://your-image-source/audi-a6.jpg", description: "Premium sedan with a refined driving experience." },
+    { id: 6, name: "Audi S5", price: 60000, image: "https://your-image-source/audi-s5.jpg", description: "Sporty coupe with high performance and style." },
+    { id: 7, name: "Audi R8", price: 145000, image: "https://your-image-source/audi-r8.jpg", description: "Supercar with a V10 engine and precise handling." },
+    { id: 8, name: "Audi A8", price: 85000, image: "https://your-image-source/audi-a8.jpg", description: "Flagship luxury sedan with advanced tech and ultimate comfort." },
+    { id: 9, name: "Audi Q8", price: 70000, image: "https://your-image-source/audi-q8.jpg", description: "Luxury SUV with coupe-like styling and high-end features." },
+    { id: 10, name: "Audi TT", price: 55000, image: "https://your-image-source/audi-tt.jpg", description: "Iconic compact sports car with sharp handling." },
+    { id: 11, name: "Audi S4", price: 50000, image: "https://your-image-source/audi-s4.jpg", description: "Sport sedan with a powerful turbocharged engine." },
+    { id: 12, name: "Audi SQ5", price: 65000, image: "https://your-image-source/audi-sq5.jpg", description: "Performance-oriented luxury SUV with aggressive styling." },
+    { id: 13, name: "Audi A7", price: 70000, image: "https://your-image-source/audi-a7.jpg", description: "Sleek hatchback sedan with coupe styling and a luxurious interior." },
+    { id: 14, name: "Audi Q3", price: 40000, image: "https://your-image-source/audi-q3.jpg", description: "Compact luxury SUV with advanced tech features." },
+    { id: 15, name: "Audi E-Tron", price: 75000, image: "https://your-image-source/audi-e-tron.jpg", description: "Electric SUV with impressive performance and tech." },
+    { id: 16, name: "Audi Q4 E-Tron", price: 60000, image: "https://your-image-source/audi-q4-e-tron.jpg", description: "Electric compact SUV with futuristic design and features." },
+    { id: 17, name: "Audi RS7", price: 115000, image: "https://your-image-source/audi-rs7.jpg", description: "High-performance sedan with exceptional power and handling." },
+    { id: 18, name: "Audi S8", price: 130000, image: "https://your-image-source/audi-s8.jpg", description: "Luxury performance sedan with a twin-turbo V8 engine." },
+    { id: 19, name: "Audi RS5", price: 85000, image: "https://your-image-source/audi-rs5.jpg", description: "High-performance sports sedan with aggressive styling." },
+    { id: 20, name: "Audi Q2", price: 35000, image: "https://your-image-source/audi-q2.jpg", description: "Compact luxury SUV with distinctive styling." }
+  ];

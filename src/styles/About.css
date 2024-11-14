@@ -1,0 +1,132 @@
+/* About.css */
+.about {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+  }
+  
+  .about-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: yellow;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color:white;
+    line-height: 1.5;
+  }
+  .about {
+  padding: 20px; /* Adjust as needed */
+}
+.locations-header {
+    margin-top: 100px; /* Adjust this value to control the space above the header */
+    font-size: 2rem; /* Optional: Increase font size for emphasis */
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+ 
+
+.locations-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Space around cards */
+    margin: 20px 0; /* Add vertical margin around the container */
+    flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+  }
+  
+  .location-card {
+    width: 18rem; /* Set a fixed width for the cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    color: #ffffff; /* Pure white text for visibility */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of inner content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding inside the card */
+  }
+  
+  /* Custom background colors for each location card */
+  .card-lagos {
+    background-color: #34495e; /* Blue-gray color */
+  }
+  
+  .card-abj {
+    background-color: #2ecc71; /* Green color */
+  }
+  
+  .card-benin {
+    background-color: #2980b9; /* Bright blue color for Benin */
+  }
+  
+  /* Hover effects */
+  .location-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  }
+  
+  /* Styling for card titles */
+  .card-title {
+    font-family: 'Arial', sans-serif; /* Font styling */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Margin below title */
+  }
+  
+  /* Styling for card text */
+  .card-text {
+    color: whit;
+    font-family: 'Verdana', sans-serif; /* Different font for text */
+    font-size: 1rem; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+  }
+  
+  /* Optional: Add responsive design */
+  @media (max-width: 768px) {
+    .locations-container {
+      flex-direction: column; /* Stack cards on smaller screens */
+      align-items: center; /* Center align on smaller screens */
+    }
+    
+    .location-card {
+      width: 90%; /* Make cards wider on small screens */
+      margin-bottom: 20px; /* Add spacing between stacked cards */
+    }
+  }
+  

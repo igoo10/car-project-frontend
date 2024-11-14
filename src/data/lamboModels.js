@@ -1,0 +1,22 @@
+export const lamborghiniModels = [
+    { id: 1, name: "Lamborghini Aventador", price: 400000, image: "https://your-image-source/aventador.jpg", description: "Iconic supercar with extreme performance and aggressive styling." },
+    { id: 2, name: "Lamborghini Huracán", price: 260000, image: "https://your-image-source/huracan.jpg", description: "Stylish and agile supercar with a V10 engine." },
+    { id: 3, name: "Lamborghini Urus", price: 225000, image: "https://your-image-source/urus.jpg", description: "Luxury SUV combining Lamborghini performance with off-road capability." },
+    { id: 4, name: "Lamborghini Gallardo", price: 180000, image: "https://your-image-source/gallardo.jpg", description: "Compact, agile supercar with a V10 engine." },
+    { id: 5, name: "Lamborghini Miura", price: 1500000, image: "https://your-image-source/miura.jpg", description: "Classic Lamborghini with a legendary design and V12 engine." },
+    { id: 6, name: "Lamborghini Sian", price: 3500000, image: "https://your-image-source/sian.jpg", description: "Hybrid hypercar with groundbreaking technology and performance." },
+    { id: 7, name: "Lamborghini Centenario", price: 2000000, image: "https://your-image-source/centenario.jpg", description: "Limited edition hypercar with striking design and power." },
+    { id: 8, name: "Lamborghini Reventón", price: 1800000, image: "https://your-image-source/reventon.jpg", description: "Exclusive supercar with military-inspired design and extreme aerodynamics." },
+    { id: 9, name: "Lamborghini Diablo", price: 350000, image: "https://your-image-source/diablo.jpg", description: "Classic supercar with a V12 engine and exotic design." },
+    { id: 10, name: "Lamborghini Countach", price: 1000000, image: "https://your-image-source/countach.jpg", description: "Iconic wedge-shaped supercar with cutting-edge technology." },
+    { id: 11, name: "Lamborghini Aventador SVJ", price: 500000, image: "https://your-image-source/aventador-svj.jpg", description: "Track-focused variant of the Aventador with extreme performance." },
+    { id: 12, name: "Lamborghini Huracán Performante", price: 280000, image: "https://your-image-source/huracan-performante.jpg", description: "Lightweight, track-ready version of the Huracán." },
+    { id: 13, name: "Lamborghini Urus Performante", price: 250000, image: "https://your-image-source/urus-performante.jpg", description: "High-performance version of the luxury SUV." },
+    { id: 14, name: "Lamborghini Huracán Spyder", price: 280000, image: "https://your-image-source/huracan-spyder.jpg", description: "Convertible version of the Huracán with thrilling open-air driving." },
+    { id: 15, name: "Lamborghini Sesto Elemento", price: 2500000, image: "https://your-image-source/sesto-elemento.jpg", description: "Ultra-lightweight, track-focused hypercar with carbon fiber body." },
+    { id: 16, name: "Lamborghini Asterion", price: 500000, image: "https://your-image-source/asterion.jpg", description: "Hybrid supercar combining luxury and power." },
+    { id: 17, name: "Lamborghini Sián Roadster", price: 3500000, image: "https://your-image-source/sian-roadster.jpg", description: "Open-top version of the Sián with stunning performance." },
+    { id: 18, name: "Lamborghini Terzo Millennio", price: 4000000, image: "https://your-image-source/terzo-millennio.jpg", description: "Futuristic electric hypercar concept designed for the next generation." },
+    { id: 19, name: "Lamborghini Murciélago", price: 300000, image: "https://your-image-source/murcielago.jpg", description: "Legendary V12 supercar with iconic scissor doors." },
+    { id: 20, name: "Lamborghini Jalpa", price: 120000, image: "https://your-image-source/jalpa.jpg", description: "Affordable entry-level Lamborghini with a V8 engine." }
+  ];

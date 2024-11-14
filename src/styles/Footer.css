@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: yellow;
+}
+
+.social-icons {
+  margin-top: 1rem; /* Add some space above the icons */
+}
+
+.social-icons a {
+  color: white; /* Set icon color to white */
+  margin: 0 10px; /* Add spacing between icons */
+  font-size: 1.5rem; /* Adjust the size of the icons */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+  color: #1e90ff; /* Change color on hover */
+}
