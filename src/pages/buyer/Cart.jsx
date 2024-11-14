@@ -4,11 +4,13 @@ import { FaPlus, FaMinus, FaTrash } from 'react-icons/fa'; // Import icons from 
 import { FlutterWaveButton, closePaymentModal } from 'flutterwave-react-v3';
 import '../../styles/Cart.css';
 
+
+const key = import.meta.env.VITE_FLUTTER_WAVE
 const Cart = ({ cart, setCart }) => {
   const estimatedTotal = cart.reduce((total, item) => total + item.price, 0);
   console.log(estimatedTotal)
   const config = {
-    public_key: 'FLWPUBK_TEST-b2f2175d8aa7762c9f7356e4c145c6e3-X',
+    public_key: key,
     tx_ref: Date.now(),
     amount: estimatedTotal,
     currency: 'NGN',
