@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios"; // Import axios for API requests
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../../styles/SellCarForm.css";
+import "../../styles/SellcarForm.css";
 
 const SellCarForm = () => {
 /*   const [formData, setFormData] = useState({
