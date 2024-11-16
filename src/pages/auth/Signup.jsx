@@ -1,5 +1,6 @@
 // src/pages/Signup.js
 import React, { useState } from 'react';
+import {Link } from 'react-router-dom';
 import '../../styles/Auth.css'; // External CSS for styling
 
 const Signup = () => {
@@ -72,8 +73,8 @@ const Signup = () => {
 
         <button type="submit" className="auth-button">Sign Up</button>
         <p className="auth-text">
-          Already have an account? <a href="/login">Login</a>
-        </p>
+  Already have an account? <Link to="/login">Login</Link>
+</p>
       </form>
     </div>
   );

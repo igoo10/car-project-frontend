@@ -54,7 +54,7 @@ const BenzPage = () => {
   };
 
   return (
-    <div className="benz-page">
+    <div className="mercedes-page">
       <h1>Mercedes-Benz Models</h1>
       <input
         type="text"
@@ -72,7 +72,7 @@ const BenzPage = () => {
               <h3>{car.name}</h3>
               <p>{car.description}</p>
               <p>Starting from ${car.price.toLocaleString()}</p>
-              <Link to={`/cars/${car.id}`} className="view-details-link">
+              <Link to={`/cars/mercedes/${car.id}`} className="view-details-link">
                 View Details
               </Link>
             </div>

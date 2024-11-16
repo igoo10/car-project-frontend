@@ -229,7 +229,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/cars" element={<CarList cars={cars} />} />
         <Route
-          path="/cars/:id"
+          path="/cars/mercedes/:id"
           element={<CarDetails cars={mercedesModels} addToCart={addToCart} />}
         />
          <Route

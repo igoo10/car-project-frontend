@@ -1,5 +1,6 @@
 // src/pages/Login.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Auth.css'; // External CSS for styling
 
 const Login = () => {
@@ -36,8 +37,8 @@ const Login = () => {
         </div>
         <button type="submit" className="auth-button">Login</button>
         <p className="auth-text">
-          Don't have an account? <a href="/signup">Sign up</a>
-        </p>
+  Don't have an account? <Link to="/signup">Sign up</Link>
+</p>
       </form>
     </div>
   );
