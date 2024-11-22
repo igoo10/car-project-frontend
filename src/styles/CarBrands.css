@@ -58,7 +58,7 @@
   
   .nav-link {
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 10px 15px;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
@@ -144,6 +144,9 @@
   
     .hero-image {
       margin-top: 20px; /* Add spacing between text and image */
+    }
+    #logo-container{
+      margin-left: 17px;
     }
   }
   

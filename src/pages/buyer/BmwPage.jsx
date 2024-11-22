@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { mercedesModels } from '../../data/mercedesModels';  // Import the models array
-import '../../styles/BenzPage.css';
+import { bmwModels} from '../../data/bmwModels';  // Import the models array
+import '../../styles/BmwPage.css';
 
-const BenzPage = () => {
+const BmwPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
-  const [filteredModels, setFilteredModels] = useState(mercedesModels);
+  const [filteredModels, setFilteredModels] = useState(bmwModels);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      const filtered = mercedesModels.filter(car =>
+      const filtered = bmwModels.filter(car =>
         car.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredModels(filtered);
@@ -53,8 +53,8 @@ const BenzPage = () => {
   };
 
   return (
-    <div className="benz-page">
-      <h1>Mercedes-Benz Models</h1>
+    <div className="bmw-page">
+      <h1>BMW Models</h1>
       <input
         type="text"
         placeholder="Search for a model..."
@@ -70,8 +70,8 @@ const BenzPage = () => {
               <img src={car.image} alt={car.name} className="car-image" />
               <h3 className="car-name">{car.name}</h3>
               <p className="car-description">{car.description}</p>
-              <p className="car-price">Starting from ${car.price.toLocaleString()}</p>
-              <Link to={`/cars/mercedes/${car.id}`} className="view-details-link">
+              <p className="bmw-car-price">Starting from ${car.price.toLocaleString()}</p>
+              <Link to={`/cars/bmw/${car.id}`} className="view-details-link">
                 View Details
               </Link>
             </div>
@@ -86,4 +86,4 @@ const BenzPage = () => {
   );
 };
 
-export default BenzPage;
+export default BmwPage;

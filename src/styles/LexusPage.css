@@ -1,0 +1,122 @@
+/* General Page Styling */
+.lexus-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8; /* Subtle gray background */
+  padding: 20px;
+  color: #333;
+}
+
+.lexus-title {
+  text-align: center;
+  color: #000; /* Black for strong branding */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.lexus-search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Car List Styling */
+.lexus-car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lexus-car-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lexus-car-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lexus-car-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.lexus-car-name {
+  font-size: 1.2rem;
+  color: #000;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.lexus-car-description {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.lexus-car-price {
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #000;
+}
+
+.lexus-view-details-link {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #000; /* Lexus Black */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.lexus-view-details-link:hover {
+  background-color: #666; /* Hover with Lexus Gray */
+}
+
+/* Pagination */
+.lexus-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lexus-pagination-btn {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lexus-pagination-btn:hover {
+  background-color: #000; /* Lexus Black */
+  color: #fff;
+}
+
+.lexus-pagination-btn.lexus-active {
+  background-color: #000; /* Lexus Black */
+  color: #fff;
+}
+
+/* No Results */
+.lexus-no-results {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+}

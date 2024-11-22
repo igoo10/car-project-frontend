@@ -71,15 +71,15 @@ const CarBrands = () => {
       </div>
 
       <div className="logo-item">
-        <a href="#">
-          <img src={bmwlogo} alt="BMW Logo" style={{ width: '50%' }} />
-        </a>
+        <Link to="/bmwpage">
+        <img src={bmwlogo} alt="Bmw Logo" style={{ width: '50%' }} />
+        </Link>
       </div>
 
       <div className="logo-item">
-        <a href="#">
-          <img src={lexuslogo} alt="Lexus Logo" style={{ width: '90%' }} />
-        </a>
+        <Link to="/lexuspage">
+        <img src={lexuslogo} alt="Lexus Logo" style={{ width: '90%' }} />
+        </Link>
       </div>
 
       <div className="logo-item">

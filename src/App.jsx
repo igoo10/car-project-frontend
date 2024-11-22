@@ -12,9 +12,13 @@ import Login from '../src/pages/auth/Login'; // Import Login
 import Signup from '../src/pages/auth/Signup'; // Import Signup
 import CarBrands from '../src/pages/buyer/CarBrands'; // Import CarBrands
 import BenzPage from '../src/pages/buyer/BenzPage';
+import ToyotaPage from '../src/pages/buyer/ToyotaPage'; // Import ToyotaPage
+import LexusPage from '../src/pages/buyer/LexusPage';
+import BmwPage from '../src/pages/buyer/BmwPage';
 import { mercedesModels } from '../src/data/mercedesModels';
 import { toyotaModels } from '../src/data/toyotaModels';
-import ToyotaPage from '../src/pages/buyer/ToyotaPage'; // Import ToyotaPage
+import { lexusModels } from '../src/data/lexusModels';
+import { bmwModels } from '../src/data/bmwModels';
 import SellerHome from './pages/seller/SellerHome';
 import SellCarForm from './pages/seller/SellcarForm';
 import CarListings from './pages/buyer/CarListings';
@@ -236,9 +240,19 @@ const App = () => {
           path="/cars/toyota/:id"
           element={<CarDetails cars={toyotaModels} addToCart={addToCart} />}
         />
+        <Route
+          path="/cars/bmw/:id"
+          element={<CarDetails cars={bmwModels} addToCart={addToCart} />}
+        />
+         <Route
+          path="/cars/lexus/:id"
+          element={<CarDetails cars={lexusModels} addToCart={addToCart} />}
+        />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route path="/benzpage" element={<BenzPage />} />
         <Route path="/toyotapage" element={<ToyotaPage />} /> {/* Add this route for ToyotaPage */}
+        <Route path="/lexuspage" element={<LexusPage />} />
+        <Route path= "/bmwpage" element={<BmwPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

@@ -7,30 +7,26 @@ import nobgbenz2 from '../../assets/nobgbenz2.png';
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div className="landing-content">
-        <div className="text-section">
-          <h4 className="subheading">Effortless</h4>
-          <h1 className="main-heading">AutoBazaar</h1>
-          <p className="description">
-            Discover top-quality cars at unbeatable prices. Your dream car is just a click away!
-          </p>
-          <div className="buttons">
-            <Link to="/car-brands">
-              <button className="btn btn-start">Shop Now</button>
-            </Link>
-            <Link to="/seller-home">
-              <button className="btn btn-book">Sell</button>
-            </Link>
-          </div>
-        </div>
-        <div className="image-section">
-          <img
-            src={nobgbenz2}
-            alt="Car"
-            className="car-image"
-          />
-        </div>
-      </div>
+     <div className="landing-content">
+  <div className="text-section">
+    <div className="description-slider">
+      <p className="description">AFFORDABLE.FAST<br></br>Trusted by thousands of customers for over 10 years.</p>
+    
+      
+    </div>
+    <div className="buttons">
+      <Link to="/car-brands">
+        <button className="btn-start">Shop Now</button>
+      </Link>
+      <Link to="/seller-home">
+        <button className="btn-book">Sell</button>
+      </Link>
+    </div>
+  </div>
+  <div className="image-section">
+    <img src={nobgbenz2} alt="Car" className="car-image" />
+  </div>
+</div>
 
       {/* About Section with ID */}
       <div id="about" className="about-section">

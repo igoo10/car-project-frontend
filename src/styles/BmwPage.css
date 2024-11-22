@@ -1,0 +1,149 @@
+/* bmwPage.css */
+
+/* General Styling */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  .bmw-page {
+    padding: 20px;
+    background-color: #ffffff; /* White background for the page */
+    color: #1a1a1a; /* Deep black for text */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #000000; /* BMW Black */
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-left: 380px;
+  }
+  
+  /* Car List Styling */
+  .car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .car-item {
+    background-color: #f9f9f9; /* Light gray for car cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .car-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0033a0; /* BMW Blue */
+    margin: 10px 0;
+  }
+  
+  .car-description {
+    font-size: 0.9em;
+    color: #555; /* Neutral gray for descriptions */
+    margin: 10px 15px;
+  }
+  
+  .bmw-car-price {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #0033a0; /* BMW Blue */
+    margin: 10px 0;
+  }
+  
+  .view-details-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 15px 0;
+    background-color: #0033a0; /* BMW Blue */
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-link:hover {
+    background-color: #000000; /* BMW Black for hover effect */
+  }
+  
+  /* No Results Styling */
+  .no-results {
+    font-size: 1.2em;
+    color: #0033a0; /* BMW Blue */
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Pagination Styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    background-color: #0033a0; /* BMW Blue */
+    color: #ffffff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #000000; /* BMW Black for hover */
+    transform: scale(1.1);
+  }
+  
+  .pagination-btn.active {
+    background-color: #000000; /* BMW Black for active page */
+  }
+@media (max-width: 768px) {
+    .bmw-page {
+      padding: 10px;
+    }
+    
+  
+    .search-bar {
+      width: 100%;
+      margin-left: 0;
+      border: 2px solid #0033a0;
+    }
+  
+    .car-item {
+      margin: 10px;
+    }
+  }

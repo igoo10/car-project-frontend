@@ -1,77 +1,202 @@
-/* Navbar styles */
+/* Base styles for the navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.1rem;
-  }
-  
-  .right-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .auth-button {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .cart-icon {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 2rem;  /* Bigger cart icon */
-    color: #333;
-  }
-  
-  .cart-icon:hover {
-    color: #007bff; /* Change color on hover */
-  }
-  
-  /* Notification badge */
- 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a2e; /* Deep navy */
+  padding: 10px 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00aaff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #ff5c5c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: #d4d4dc;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover,
+.nav-icon:focus {
+  color: #00aaff;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -25px;
+  background-color: #1a1a2e;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* Dropdown styles for Account */
+.auth-dropdown {
+  position: relative;
+}
+
+.auth-button {
+  background: none;
+  color: #d4d4dc;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.auth-button:hover,
+.auth-button:focus {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1a1a2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 10;
+  flex-direction: column;
+  width: 150px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #d4d4dc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.auth-dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Position and style the cart icon */
+.cart-icon {
+  position: relative; /* This will be the reference point for the notification */
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #00aaff;
+}
+
+/* Style for the notification badge */
 .notification {
-    position: absolute;
-    top: -10px; /* Moves the badge slightly above the cart icon */
-    right: -10px; /* Moves the badge to the right edge of the cart icon */
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 1.4rem; /* Ensures the badge is wide enough for two digits */
-    height: 1.4rem; /* Ensures the badge is circular */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds slight shadow for better visibility */
+  position: absolute; /* Position the badge relative to the cart icon */
+  top: -18px; /* Moves the notification above the cart icon */
+  right: -20px; /* Moves it to the right */
+  background-color: red; /* Red background color */
+  color: white; /* White text for visibility */
+  border-radius: 50%; /* Circular shape */
+  padding: 5px 10px; /* Padding inside the notification */
+  font-size: 12px; /* Font size for the notification */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px; /* Ensures that the notification circle is big enough to accommodate the number */
+  height: 25px; /* Ensures the circle is always round */
+}
+
+/* Hide the notification if there are no items in the cart */
+.cart-icon .notification {
+  display: none; /* Default state - hidden */
+}
+
+.cart-icon .notification.show {
+  display: block; /* Show notification when cart has items */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 10px;
   }
-  
-  
-  
-  
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .auth-button {
+    font-size: 0.9rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}

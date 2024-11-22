@@ -53,7 +53,7 @@ const ToyotaPage = () => {
   };
 
   return (
-    <div className="benz-page">
+    <div className="toyota-page">
       <h1>Toyota Models</h1>
       <input
         type="text"
@@ -67,10 +67,10 @@ const ToyotaPage = () => {
         {currentCars.length > 0 ? (
           currentCars.map(car => (
             <div key={car.id} className="car-item">
-              <img src={car.image} alt={car.name} />
-              <h3>{car.name}</h3>
-              <p>{car.description}</p>
-              <p>Starting from ${car.price.toLocaleString()}</p>
+              <img src={car.image} alt={car.name} className="car-image" />
+              <h3 className="car-name">{car.name}</h3>
+              <p className="car-description">{car.description}</p>
+              <p className="car-price">Starting from ${car.price.toLocaleString()}</p>
               <Link to={`/cars/toyota/${car.id}`} className="view-details-link">
                 View Details
               </Link>

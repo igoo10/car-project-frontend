@@ -104,3 +104,10 @@
 .auth-text a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .user-type-button.active {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+}
